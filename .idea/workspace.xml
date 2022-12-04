@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b1911e0-f455-4183-b2e3-c0f581e3d5e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab_03.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/FrekenSnorken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/JumpStyle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/Mumintroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/Muumimamma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/Panter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/Remember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/RubyKing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/Wizard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Specificity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/Beach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/Castle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/DreamWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/Mountain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/Mumindalen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/Void.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/places/WoodenKingdom.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IRgjxsr1lfyk7ndG4UFpDrkn5q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="History" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="History" />
+      <module name="lab_03" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.History" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b1911e0-f455-4183-b2e3-c0f581e3d5e8" name="Changes" comment="" />
+      <created>1670149951270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670149951270</updated>
+      <workItem from="1670149953630" duration="215000" />
+      <workItem from="1670150187163" duration="788000" />
+      <workItem from="1670162811256" duration="34000" />
+      <workItem from="1670162862728" duration="6700000" />
+      <workItem from="1670169775240" duration="274000" />
+      <workItem from="1670170461277" duration="5072000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
