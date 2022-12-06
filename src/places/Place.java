@@ -42,4 +42,23 @@ public abstract class Place {
         return String.format("%s", name);
     }
 
+//    @Override
+//    public boolean equals(Object obj) {
+//        Character other = (Character) obj;
+//        return this.getClass().equals(other.getClass());
+//    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null) return false;
+        if (!(o instanceof Place place)) return false;
+        return Objects.equals(getName(), place.getName()) && Objects.equals(location, place.location) && Objects.equals(getClass(), place.getClass());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), location);
+    }
 }

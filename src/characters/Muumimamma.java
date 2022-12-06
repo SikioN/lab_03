@@ -1,19 +1,104 @@
 package characters;
 
+import entities.Entity;
+import myexception.UnsupportedMethod;
+import places.DreamWorld;
 import places.Place;
+import types.CodeColor;
+import types.Color;
+import types.ThinkingType;
 
-public class Muumimamma extends Character implements Remember{
+import java.util.Random;
+
+final public class Muumimamma extends Character implements Remember{
     public Muumimamma(String name, Place location) {
         super(name, location);
     }
 
     @Override
-    public String getRemember() {
-        return null;
+    public String getName() {
+        return CodeColor.CYAN +super.getName() + CodeColor.NONCOLOR;
     }
 
     @Override
-    public String remember() {
-        return null;
+    public void jump(Place newLocation) throws UnsupportedMethod {
+        throw new UnsupportedMethod();
     }
+
+
+    @Override
+    public void walk(Place newLocation) throws UnsupportedMethod {
+        throw new UnsupportedMethod();
+    }
+
+    @Override
+    public void watch(Character character) {
+        if (this.equals(character)) {
+            this.voiceLine(String.format("Вот %s", character.getName()));
+        } else {
+            this.voiceLine("Ой... здесь ничего нет.");
+        }
+    }
+
+    @Override
+    public void watch(Entity entity) {
+      if (this.getLocation().getClass().equals(entity.getLocation().getClass()) && this.getLocation().getName().equals(entity.getLocation().getName())) {
+            this.voiceLine(String.format("Вот %s", entity.getName()));
+        } else {
+            this.voiceLine("Ой... здесь ничего нет.");
+        }
+    }
+
+    @Override
+    public String getRemember(String about) {
+        if (about == null) {
+            about = "небытие";
+        }
+        return String.format("Думает %s о %s.\n", ThinkingType.values()[new Random().nextInt(ThinkingType.values().length)], about);
+    }
+
+    @Override
+    public void remember() {
+        if (Math.random() >= 0.3) {
+            System.out.print(this.getName() +" казалось, что"+ "\u001B[32m" + " отправилась " + "\u001B[0m" + "на Пляж, ");
+            Place oldLocation = this.getLocation();
+
+            this.setLocation(new DreamWorld("Пляж"));
+
+            class Carnation extends Entity {
+                private final Color specificity;
+                private final String code;
+                public Carnation() {
+                    super("Гвоздика", new DreamWorld("Пляж"));
+                    int r = new Random().nextInt(Color.values().length);
+                    specificity = Color.values()[r];
+                    code = CodeColor.values()[r].getTitle();
+                }
+                public void swinging() {
+                    int rate = -1 + (int) (Math.random() * 3);
+                    String message = code + this.getSpecificity() + "\u001B[0m " + this.getName() + (rate > 0 ? " разгорался всё сильнее. " : " медленно потыхал... ");
+                    System.out.print(message);
+                }
+
+                public String getSpecificity() {
+                    return specificity.getTitle();
+                }
+
+        }
+            Carnation cr = new Carnation();
+
+            if (this.getLocation().getName().equals(cr.getLocation().getName())) {
+                this.watch(cr);
+            }
+
+            System.out.printf("После чего вернулась в %s.\n", oldLocation.getName());
+            this.setLocation(oldLocation);
+
+        } else {
+            System.out.print(this.getName() + "\u001B[31m" + " ничего " + "\u001B[0m" + "не пришло на ум...");
+        }
+
+    }
+
+
 }

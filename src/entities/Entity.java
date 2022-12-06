@@ -7,22 +7,36 @@ import java.util.Objects;
 
 public abstract class Entity {
     final private String name;
-    private Place location = null;
-
-    public Entity(String name) {
-        this.name = Objects.requireNonNullElse(name, "Ничто");
-    }
+    private Place location;
 
     public Entity(String name, Place location) {
         this.name = Objects.requireNonNullElse(name, "Ничто");
         this.location = Objects.requireNonNullElseGet(location, Void::new);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Place getLocation() {
+        return location;
+    }
+
     @Override
     public String toString() {
-        if (location != null) {
-            return String.format("%s в %s", this.name, this.location);
-        }
-        return String.format("%s", this.name);
+        return String.format("%s в %s", this.name, this.location);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null) return false;
+        if (!(o instanceof Entity other)) return false;
+        return this.getLocation().getName().equals(other.getLocation().getName()) && this.getLocation().getClass().equals(other.getLocation().getClass());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getLocation());
     }
 }

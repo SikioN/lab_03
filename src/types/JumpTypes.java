@@ -1,8 +1,8 @@
-package characters;
+package types;
 
 import java.util.Random;
 
-public enum JumpStyle {
+public enum JumpTypes {
     SOFT ("мягко"),
     HEAVY ("тяжело"),
     CLUMSILY ("неуклюже"),
@@ -10,19 +10,24 @@ public enum JumpStyle {
     HIGHER ("высоко"),
     CAREFULLY ("осторожно");
 
-    private String title;
+    private final String title;
+    private static final Random r;
 
-    JumpStyle(String title) {
+    JumpTypes(String title) {
         this.title = title;
+    }
+
+    static {
+        r = new Random();
     }
 
     public String getTitle() {
         return title;
     }
 
-    private JumpStyle randomStyle() {
-        int r = new Random().nextInt(JumpStyle.values().length);
-        return JumpStyle.values()[r];
+    // статик
+    private static JumpTypes randomStyle() {
+        return JumpTypes.values()[r.nextInt(JumpTypes.values().length)];
     }
 
     @Override

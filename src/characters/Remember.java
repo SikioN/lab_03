@@ -1,6 +1,6 @@
 package characters;
 
 public interface Remember {
-    String getRemember();
-    String remember();
+    String getRemember(String about);
+    void remember();
 }

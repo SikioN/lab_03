@@ -1,6 +1,6 @@
 package places;
 
-public class Castle extends Place{
+final public class Castle extends Place{
     public Castle(String name, Place location) {
         super(name, location);
     }
