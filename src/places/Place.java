@@ -42,13 +42,6 @@ public abstract class Place {
         return String.format("%s", name);
     }
 
-//    @Override
-//    public boolean equals(Object obj) {
-//        Character other = (Character) obj;
-//        return this.getClass().equals(other.getClass());
-//    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

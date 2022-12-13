@@ -76,7 +76,7 @@ public abstract class Character {
         if (this == o) return true;
         if (o == null) return false;
         if (!(o instanceof Character other)) return false;
-        return this.getLocation().getName().equals(other.getLocation().getName()) && this.getLocation().getClass().equals(other.getLocation().getClass());
+        return this.getLocation().equals(other.getLocation());
     }
 
     @Override

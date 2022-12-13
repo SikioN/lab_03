@@ -91,10 +91,10 @@ final public class FrekenSnorken extends Character implements Remember{
             }
 
 
-            WoodenQueen sn = new WoodenQueen();
+            WoodenQueen woodenQueen = new WoodenQueen();
 
-            if (this.equals(sn)) {
-                System.out.printf("где вновь встретилась в битве с %s! ", sn.getName());
+            if (this.equals(woodenQueen)) {
+                System.out.printf("где вновь встретилась в битве с %s! ", woodenQueen.getName());
             }
 
             if (Math.random() >= 0.8) {
