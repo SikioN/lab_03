@@ -21,13 +21,8 @@ public enum JumpTypes {
         r = new Random();
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    // статик
-    private static JumpTypes randomStyle() {
-        return JumpTypes.values()[r.nextInt(JumpTypes.values().length)];
+    public static JumpTypes randomStyle() {
+        return values()[r.nextInt(JumpTypes.values().length)];
     }
 
     @Override

@@ -7,7 +7,6 @@ import places.Place;
 import types.CodeColor;
 import types.ThinkingType;
 
-import java.util.Random;
 
 final public class Mumintroll extends Character implements Remember{
     public Mumintroll(String name, Place location) {
@@ -52,7 +51,7 @@ final public class Mumintroll extends Character implements Remember{
         if (about == null) {
             about = "небытие";
         }
-        return String.format("Размышляет %s о %s.\n",  ThinkingType.values()[new Random().nextInt(ThinkingType.values().length)], about);
+        return String.format("Размышляет %s о %s.\n",  ThinkingType.randomStyle(), about);
     }
 
     @Override

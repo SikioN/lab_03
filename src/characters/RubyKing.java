@@ -6,7 +6,6 @@ import phrase.VoiceLines;
 import places.Place;
 import types.CodeColor;
 
-import java.util.Random;
 
 final public class RubyKing extends Character {
     public RubyKing(String name, Place location) {
@@ -41,8 +40,8 @@ final public class RubyKing extends Character {
 
     @Override
     public String voiceLine() {
-        String message = String.valueOf(VoiceLines.values()[new Random().nextInt(VoiceLines.values().length)]);
-        return "— " + "\u001B[31m" + message + "\u001B[0m" + "\033[3m" + String.format(" — Сказал %s в %s", this.getName(), this.getLocation()) + " \033[0m";
+        VoiceLines message =  VoiceLines.randomStyle();
+        return "— " + CodeColor.RED + message + CodeColor.NONCOLOR + "\033[3m" + String.format(" — Сказал %s в %s", this.getName(), this.getLocation()) + " \033[0m";
     }
 
 

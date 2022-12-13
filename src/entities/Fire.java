@@ -5,7 +5,6 @@ import types.CodeColor;
 import types.Color;
 
 import java.util.Objects;
-import java.util.Random;
 
 final public class Fire extends Entity implements Specificity {
     private final Color specificity;
@@ -13,16 +12,14 @@ final public class Fire extends Entity implements Specificity {
 
     public Fire(String name, Place location) {
         super(name, location);
-        int r = new Random().nextInt(Color.values().length);
-        specificity = Color.values()[r];
-        code = CodeColor.values()[r].getTitle();
-
+        specificity = Color.randomStyle();
+        code = CodeColor.values()[specificity.ordinal()].getTitle();
     }
 
 
     public void flaredUp() {
         int rate = -1 + (int) (Math.random() * 3);
-        String message = code + this.getSpecificity() + "\u001B[0m " + this.getName() + (rate > 0 ? " разгорался всё сильнее. " : " медленно потухал... ");
+        String message = code + this.getSpecificity() + CodeColor.NONCOLOR + " " + this.getName() + (rate > 0 ? " разгорался всё сильнее. " : " медленно потухал... ");
         System.out.print(message);
     }
 

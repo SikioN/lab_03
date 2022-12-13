@@ -9,18 +9,18 @@ public enum VoiceLines {
     ARROGANTLY ("Королями не становятся... Ими рождаются! Ха-ха-ха!");
 
     private final String title;
+    private static final Random r;
 
     VoiceLines(String title) {
         this.title = title;
     }
 
-    public String getTitle() {
-        return title;
+    static {
+        r = new Random();
     }
 
-    private static VoiceLines randomStyle() {
-        int r = new Random().nextInt(VoiceLines.values().length);
-        return VoiceLines.values()[r];
+    public static VoiceLines randomStyle() {
+        return values()[r.nextInt(VoiceLines.values().length)];
     }
 
     @Override

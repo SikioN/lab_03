@@ -8,16 +8,15 @@ import types.CodeColor;
 import types.Color;
 import types.ThinkingType;
 
-import java.util.Random;
 
-final public class Muumimamma extends Character implements Remember{
+final public class Muumimamma extends Character implements Remember {
     public Muumimamma(String name, Place location) {
         super(name, location);
     }
 
     @Override
     public String getName() {
-        return CodeColor.CYAN +super.getName() + CodeColor.NONCOLOR;
+        return CodeColor.CYAN + super.getName() + CodeColor.NONCOLOR;
     }
 
     @Override
@@ -42,7 +41,7 @@ final public class Muumimamma extends Character implements Remember{
 
     @Override
     public void watch(Entity entity) {
-      if (this.getLocation().getClass().equals(entity.getLocation().getClass()) && this.getLocation().getName().equals(entity.getLocation().getName())) {
+        if (this.getLocation().getClass().equals(entity.getLocation().getClass()) && this.getLocation().getName().equals(entity.getLocation().getName())) {
             this.voiceLine(String.format("Вот %s", entity.getName()));
         } else {
             this.voiceLine("Ой... здесь ничего нет.");
@@ -54,29 +53,33 @@ final public class Muumimamma extends Character implements Remember{
         if (about == null) {
             about = "небытие";
         }
-        return String.format("Думает %s о %s.\n", ThinkingType.values()[new Random().nextInt(ThinkingType.values().length)], about);
+        return String.format("Думает %s о %s.\n", ThinkingType.randomStyle(), about);
     }
 
     @Override
     public void remember() {
         if (Math.random() >= 0.3) {
-            System.out.print(this.getName() +" казалось, что"+ "\u001B[32m" + " отправилась " + "\u001B[0m" + "на Пляж, ");
+
+            DreamWorld beach = new DreamWorld("Пляж");
+            System.out.print(this.getName() + " казалось, что" + "\u001B[32m" + " отправилась " + "\u001B[0m" + "на Пляж, ");
             Place oldLocation = this.getLocation();
 
-            this.setLocation(new DreamWorld("Пляж"));
+
+            this.setLocation(beach);
 
             class Carnation extends Entity {
                 private final Color specificity;
                 private final String code;
+
                 public Carnation() {
-                    super("Гвоздика", new DreamWorld("Пляж"));
-                    int r = new Random().nextInt(Color.values().length);
-                    specificity = Color.values()[r];
-                    code = CodeColor.values()[r].getTitle();
+                    super("Гвоздика", beach);
+                    specificity = Color.randomStyle();
+                    code = CodeColor.values()[specificity.ordinal()].getTitle();
                 }
+
                 public void swinging() {
                     int rate = -1 + (int) (Math.random() * 3);
-                    String message = code + this.getSpecificity() + "\u001B[0m " + this.getName() + (rate > 0 ? " разгорался всё сильнее. " : " медленно потыхал... ");
+                    String message = code + this.getSpecificity() + CodeColor.NONCOLOR + " " + this.getName() + (rate > 0 ? " медленно качалась. " : " была застывшей... ");
                     System.out.print(message);
                 }
 
@@ -84,11 +87,12 @@ final public class Muumimamma extends Character implements Remember{
                     return specificity.getTitle();
                 }
 
-        }
+            }
             Carnation cr = new Carnation();
 
             if (this.getLocation().getName().equals(cr.getLocation().getName())) {
                 this.watch(cr);
+                cr.swinging();
             }
 
             System.out.printf("После чего вернулась в %s.\n", oldLocation.getName());

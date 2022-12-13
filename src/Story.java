@@ -32,7 +32,7 @@ public class Story {
         FrekenSnorken frekenSnorken = new FrekenSnorken("Фрекен Снорк", castle);
         Muumimamma muumimamma = new Muumimamma("Муми-мама", castle);
 
-        ArrayList<Character> residents = new ArrayList<Character>();
+        ArrayList<Character> residents = new ArrayList<>();
         residents.add(mumintroll);
         residents.add(muumimamma);
         residents.add(frekenSnorken);
@@ -52,10 +52,5 @@ public class Story {
             }
         }
 
-//        mumintroll.remember();
-//        frekenSnorken.remember();
-//        muumimamma.remember();
-//        Mumintroll mumintroll = new Mumintroll(null, null);
-//        mumintroll.walk(null);
     }
 }

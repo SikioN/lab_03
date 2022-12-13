@@ -29,7 +29,7 @@ final public class Wizard extends Character {
 
     @Override
     public String getName() {
-        return CodeColor.VIOLET + super.getName() +  CodeColor.NONCOLOR;
+        return CodeColor.VIOLET + super.getName() + CodeColor.NONCOLOR;
     }
 
     public void walk(Place newLocation) {
@@ -38,13 +38,12 @@ final public class Wizard extends Character {
         if (newLocation == null) {
             message = String.format(this.getName() + " остался в %s... ", this.getLocation());
         } else {
-            message = String.format("А "+this.getName() + " взял путь прямо из %s в %s! ", this.getLocation(), newLocation.getName());
+            message = String.format("А " + this.getName() + " взял путь прямо из %s в %s! ", this.getLocation(), newLocation.getName());
             this.setLocation(newLocation);
         }
 
         System.out.print(message);
     }
-
 
 
 }

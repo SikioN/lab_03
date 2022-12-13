@@ -4,33 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b1911e0-f455-4183-b2e3-c0f581e3d5e8" name="Changes" comment="update all files">
-      <change afterPath="$PROJECT_DIR$/src/entities/Fire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myexception/UnsupportedMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/phrase/VoiceLines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/places/World.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/CodeColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/ThinkingType.java" afterDir="false" />
+    <list default="true" id="7b1911e0-f455-4183-b2e3-c0f581e3d5e8" name="Changes" comment="new update&#10;fix some files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/History.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Story.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Story.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/FrekenSnorken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/FrekenSnorken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/JumpStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/JumpTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/Mumintroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Mumintroll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/Muumimamma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Muumimamma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/Panter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Panter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/Remember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Remember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/RubyKing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/RubyKing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Castle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Castle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/DreamWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/DreamWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Mountain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Mountain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Mumindalen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Mumindalen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Void.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Void.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/WoodenKingdom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Fire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Fire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phrase/VoiceLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/phrase/VoiceLines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/JumpTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/JumpTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/ThinkingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ThinkingType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,21 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/lab_03",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/lab_03&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Story">
     <configuration name="History" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="History" />
       <module name="lab_03" />
@@ -88,8 +75,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Story" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Story" />
+      <module name="lab_03" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Story" />
         <item itemvalue="Application.History" />
       </list>
     </recent_temporary>
@@ -110,7 +105,25 @@
       <workItem from="1670170461277" duration="17238000" />
       <workItem from="1670229989710" duration="15494000" />
       <workItem from="1670351411963" duration="133000" />
+      <workItem from="1670351626965" duration="390000" />
+      <workItem from="1670564820273" duration="194000" />
+      <workItem from="1670939401363" duration="2340000" />
     </task>
+    <task id="LOCAL-00001" summary="add something new">
+      <created>1670351948990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670351948990</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add Story.java">
+      <created>1670351983885</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670351983885</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +132,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create 1 version of third lab" />
     <MESSAGE value="update all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update all files" />
+    <MESSAGE value="final version of 3 lab" />
+    <MESSAGE value="add something new" />
+    <MESSAGE value="add Story.java" />
+    <MESSAGE value="new update&#10;fix some files" />
+    <option name="LAST_COMMIT_MESSAGE" value="new update&#10;fix some files" />
   </component>
 </project>

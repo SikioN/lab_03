@@ -33,9 +33,8 @@ public enum Color {
         return title;
     }
 
-    // статик
-    private static Color randomStyle() {
-        return Color.values()[r.nextInt(Color.values().length)];
+    public static Color randomStyle() {
+        return values()[r.nextInt(Color.values().length)];
     }
 
     @Override
