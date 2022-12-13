@@ -61,7 +61,7 @@ final public class Muumimamma extends Character implements Remember {
         if (Math.random() >= 0.3) {
 
             DreamWorld beach = new DreamWorld("Пляж");
-            System.out.print(this.getName() + " казалось, что" + "\u001B[32m" + " отправилась " + "\u001B[0m" + "на Пляж, ");
+            System.out.print(this.getName() + " казалось, что" + CodeColor.GREEN + " отправилась " + CodeColor.NONCOLOR + "на Пляж, ");
             Place oldLocation = this.getLocation();
 
 

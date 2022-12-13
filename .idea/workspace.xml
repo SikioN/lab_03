@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b1911e0-f455-4183-b2e3-c0f581e3d5e8" name="Changes" comment="new update&#10;fix some files">
+    <list default="true" id="7b1911e0-f455-4183-b2e3-c0f581e3d5e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Story.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Story.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/FrekenSnorken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/FrekenSnorken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/Mumintroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Mumintroll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/Muumimamma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Muumimamma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/Panter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Panter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/RubyKing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/RubyKing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Fire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Fire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phrase/VoiceLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/phrase/VoiceLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/JumpTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/JumpTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/ThinkingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ThinkingType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +98,8 @@
       <workItem from="1670351411963" duration="133000" />
       <workItem from="1670351626965" duration="390000" />
       <workItem from="1670564820273" duration="194000" />
-      <workItem from="1670939401363" duration="2340000" />
+      <workItem from="1670939401363" duration="2414000" />
+      <workItem from="1670953477655" duration="500000" />
     </task>
     <task id="LOCAL-00001" summary="add something new">
       <created>1670351948990</created>
@@ -123,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670351983885</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new update&#10;fix some files">
+      <created>1670941826218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670941826218</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

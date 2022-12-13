@@ -58,14 +58,15 @@ final public class FrekenSnorken extends Character implements Remember{
     @Override
     public void remember() {
         if (Math.random() >= 0.25) {
-            System.out.print(this.getName() + "\u001B[32m" + " думала " + "\u001B[0m" + "о Деревянном королевстве, ");
+            DreamWorld woodenKingdom = new DreamWorld("Деревянное королевство");
+            System.out.print(this.getName() + CodeColor.GREEN + " думала " + CodeColor.NONCOLOR + "о Деревянном королевстве, ");
             Place oldLocation = this.getLocation();
 
-            this.setLocation(new DreamWorld("Деревянное королевство"));
+            this.setLocation(woodenKingdom);
 
             class WoodenQueen extends Character {
                 public WoodenQueen() {
-                    super("Деревянная королев", new DreamWorld("Деревянное королевство"));
+                    super("Деревянная королев", woodenKingdom);
                 }
 
                 @Override

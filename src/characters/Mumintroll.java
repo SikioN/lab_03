@@ -57,14 +57,15 @@ final public class Mumintroll extends Character implements Remember{
     @Override
     public void remember() {
         if (Math.random() >= 0.5) {
-            System.out.print(this.getName() + "\u001B[32m" + " отправился " + "\u001B[0m" + "в Мир воспоминаний, ");
+            DreamWorld worldOfMemories = new DreamWorld("Мир воспоминаний");
+            System.out.print(this.getName() + CodeColor.GREEN + " отправился " + CodeColor.NONCOLOR + "в Мир воспоминаний, ");
             Place oldLocation = this.getLocation();
 
-            this.setLocation(new DreamWorld("Мир воспоминаний"));
+            this.setLocation(worldOfMemories);
 
             class Snusmumriken extends Character {
                 public Snusmumriken() {
-                    super("Снусмумриком", new DreamWorld("Мир воспоминаний"));
+                    super("Снусмумриком", worldOfMemories);
                 }
 
 
